@@ -1,0 +1,58 @@
+<div class="bg">
+  <div class="container">
+  <br/><br/>
+    <div class="row">
+      <div class="col-4 mx-auto">
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+ <div class="col-4 mx-auto">
+
+        <div class="text-center">
+      <img src="https://i.gifer.com/6lR.gif" width="200px">
+    </div>
+</div>
+
+      <div class="col-4 mx-auto">
+
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+     <div class="row">
+     </div>
+        <div class="row">
+     </div>
+
+        </form>
+<br/><br/><br/><br/><br/>
+
+        <div class="container">
+    <div class="row">
+      <div class="col-4 mx-auto">
+        <form class="create-form">
+
+          <div class="form-group">
+            <textarea class="form-control" id="ca" rows="3" width="50px"></textarea>
+            <br/>
+            <div class="text-center">
+              <button class="btn btn-danger btn-lg text-center" type="submit"><span class="fa fa-plus text-center"></span>Add
+                a Burger</button>
+            </div>
+          </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

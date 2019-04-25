@@ -1,0 +1,48 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  font-family: Trattatello, fantasy;
+  font-weight: bold;
+  font-size: 1.8em;
+  color:#C85A17;
+  /* font-family: 'Lato', sans-serif; */
+  /* background: #faebd7; */
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.btn {
+  font-family: Luminari, fantasy;
+  font-size: 1.2em;
+}
+#ca{
+  font-family: Luminari, fantasy;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://static1.squarespace.com/static/5b6e16e8f8370a5d5b011996/t/5b98220f032be4a529222ac7/1536696851822/creator-interior-mural.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
