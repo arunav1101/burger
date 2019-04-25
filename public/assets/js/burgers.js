@@ -14,7 +14,6 @@ $(function() {
       data: newDevourState
     }).then(
       function() {
-        console.log("changed sleep to", newDevour);
         location.reload();
       }
     );
@@ -23,17 +22,16 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
-    var newCat = {
+    var newBurger = {
       burger_name: $("#ca").val().trim()
     };
 
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newCat
+      data: newBurger
     }).then(
       function() {
-        console.log("created new cat");
         // Reload the page to get the updated list
         location.reload();
       }
@@ -48,7 +46,6 @@ $(function() {
       type: "DELETE"
     }).then(
       function() {
-        console.log("deleted burger", id);
         // Reload the page to get the updated list
         location.reload();
       }

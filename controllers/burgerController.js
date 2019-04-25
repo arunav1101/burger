@@ -13,7 +13,6 @@ router.get("/", function(req, res) {
     };
 
     console.log(hbsObject);
-    // console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
